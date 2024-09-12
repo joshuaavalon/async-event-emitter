@@ -1,0 +1,2 @@
+spec:
+  - ./dist/**/__tests__/*.spec.js

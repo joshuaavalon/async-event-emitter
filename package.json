@@ -1,0 +1,48 @@
+{
+  "name": "@joshuaavalon/async-event-emitter",
+  "version": "1.0.0",
+  "description": "Async version of EventEmitter",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "lint": "eslint src",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Joshua Avalon",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuaavalon/async-event-emitter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshuaavalon/async-event-emitter/issues"
+  },
+  "homepage": "https://github.com/joshuaavalon/async-event-emitter#readme",
+  "imports": {},
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/__tests__/**/*"
+  ],
+  "devDependencies": {
+    "@joshuaavalon/eslint-config-typescript": "^8.1.2",
+    "@types/chai": "^4.3.17",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20.14.13",
+    "chai": "^5.1.1",
+    "eslint": "^9.8.0",
+    "mocha": "^10.7.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {}
+}
